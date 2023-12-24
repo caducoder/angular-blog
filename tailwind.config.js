@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'menu-icon': "url(/assets/img/menu.png)",
+        'close-icon': "url(/assets/img/close.png)"
+      }
+    },
   },
   plugins: [],
 }

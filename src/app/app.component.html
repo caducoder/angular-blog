@@ -1,1 +1,29 @@
-<h1>THE BLOG</h1>
+<div class="z-50 absolute right-0 w-full min-h-screen transition-all ease duration-300"
+  [ngClass]="{'right-[300px]': isMenuOpen}">
+  <app-navbar (menuEventEmitter)="isMenuOpen = !isMenuOpen"></app-navbar>
+  <main class="min-h-[90vh] bg-neutral-900">
+    <h1>THE BLOG</h1>
+
+  </main>
+</div>
+
+<div class="absolute top-0 right-0 h-full flex flex-col gap-12 items-center justify-center w-[300px]">
+  <ul>
+    <li class="hover:text-blue-400 text-2xl p-1">
+      <a href="#">LEARN</a>
+    </li>
+    <li class=" hover:text-blue-400 text-2xl p-1">
+      <a href="#">BLOG</a>
+    </li>
+    <li class="hover:text-blue-400 text-2xl p-1">
+      <a href="#">BOOKMARKS</a>
+    </li>
+    <li class="hover:text-blue-400 text-2xl p-1">
+      <a href="#">UI KIT</a>
+    </li>
+    <li class="hover:text-blue-400 text-2xl p-1">
+      <a href="#">LAIN NYA</a>
+    </li>
+  </ul>
+
+</div>

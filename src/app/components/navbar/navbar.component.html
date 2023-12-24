@@ -1,1 +1,44 @@
-<p>navbar works!</p>
+<header class="flex flex-row bg-stone-950 justify-between md:justify-normal w-full text-white px-6 py-6">
+  <div>
+    <img class="inline-block h-12 w-12 rounded-full" src="https://fakeimg.pl/256x256/ff5577?text=Hello" />
+  </div>
+  <div class="flex flex-row justify-between items-center w-full pl-10">
+    <nav class="hidden md:block">
+      <ul class="list-none flex flex-row gap-8">
+        <li>
+          <a href="#" class="opacity-70 font-bold uppercase text-sm">Learn</a>
+        </li>
+        <li>
+          <a href="#" class="font-bold uppercase text-sm">Blog</a>
+        </li>
+        <li>
+          <a href="#" class="opacity-70 font-bold uppercase text-sm">Bookmarks</a>
+        </li>
+        <li>
+          <a href="#" class="opacity-70 font-bold uppercase text-sm">UI kit</a>
+        </li>
+        <li>
+          <a href="#" class="opacity-70 font-bold uppercase text-sm">Lain Nya</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="flex-1 md:hidden"></div>
+    <div class="flex-row gap-2 hidden md:flex">
+      <button matTooltip="Basic" class="opacity-70 hover:opacity-100 px-1" aria-label="Twitter">
+        <i class="fa-brands fa-twitter fa-sm"></i>
+      </button>
+      <button aria-label="Instagram" class="opacity-70 hover:opacity-100 px-1">
+        <i class="fa-brands fa-instagram fa-sm"></i>
+      </button>
+      <button aria-label="Dribbble" class="opacity-70 hover:opacity-100 px-1">
+        <i class="fa-brands fa-dribbble fa-sm"></i>
+      </button>
+      <button aria-label="Medium" class="opacity-70 hover:opacity-100 px-1">
+        <i class="fa-brands fa-medium fa-sm"></i>
+      </button>
+    </div>
+
+    <div class="relative w-8 h-8 bg-no-repeat bg-center cursor-pointer block md:hidden"
+      [ngClass]="{'bg-menu-icon': !menuOpen, 'bg-close-icon': menuOpen}" (click)="toggle()"></div>
+  </div>
+</header>
