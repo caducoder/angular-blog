@@ -3,6 +3,17 @@
   <app-navbar (menuEventEmitter)="isMenuOpen = !isMenuOpen"></app-navbar>
   <main class="min-h-[90vh] text-white ">
     <app-big-title></app-big-title>
+    <div class="flex flex-col pt-6 md:flex-row">
+      <app-big-card></app-big-card>
+      <div
+        class="border-t-[1px] mx-4 border-opacity-25 border-neutral-500 mt-8 pb-5 pt-5 md:pt-0 md:border-t-0 md:mt-4 md:mx-8 xl:mx-12">
+        <app-small-card></app-small-card>
+        <hr class="mt-8 mb-5 opacity-25 border-neutral-500">
+        <app-small-card></app-small-card>
+        <hr class="mt-8 mb-5 opacity-25 border-neutral-500">
+        <app-small-card></app-small-card>
+      </div>
+    </div>
   </main>
 </div>
 
