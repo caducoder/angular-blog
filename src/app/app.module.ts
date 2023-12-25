@@ -8,6 +8,7 @@ import { BigCardComponent } from './components/big-card/big-card.component';
 import { SmallCardComponent } from './components/small-card/small-card.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { BigTitleComponent } from './components/big-title/big-title.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BigTitleComponent } from './components/big-title/big-title.component';
   imports: [
     BrowserModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

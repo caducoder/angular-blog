@@ -4,14 +4,14 @@
   <main class="min-h-[90vh] text-white ">
     <app-big-title></app-big-title>
     <div class="flex flex-col pt-6 md:flex-row">
-      <app-big-card></app-big-card>
+      <app-big-card [article]="posts[0]"></app-big-card>
       <div
-        class="border-t-[1px] mx-4 border-opacity-25 border-neutral-500 mt-8 pb-5 pt-5 md:pt-0 md:border-t-0 md:mt-4 md:mx-8 xl:mx-12">
-        <app-small-card></app-small-card>
-        <hr class="mt-8 mb-5 opacity-25 border-neutral-500">
-        <app-small-card></app-small-card>
-        <hr class="mt-8 mb-5 opacity-25 border-neutral-500">
-        <app-small-card></app-small-card>
+        class="border-t-[1px] mx-4 border-opacity-25 border-neutral-500 mt-8 pb-5 pt-5 md:pb-0 md:pt-0 md:border-t-0 md:mt-4 md:mx-8 xl:mx-12">
+        <app-small-card [article]="posts[1]"></app-small-card>
+        <hr class="mt-8 mb-8 opacity-25 border-neutral-500">
+        <app-small-card [article]="posts[2]"></app-small-card>
+        <hr class="mt-8 mb-8 opacity-25 border-neutral-500">
+        <app-small-card [article]="posts[3]"></app-small-card>
       </div>
     </div>
     <small class="text-neutral-900">No system is safe</small>
@@ -23,7 +23,7 @@
     <li class="hover:text-blue-400 text-2xl p-1 uppercase">
       <a href="#">LEARN</a>
     </li>
-    <li class=" hover:text-blue-400 text-2xl p-1 uppercase">
+    <li class="hover:text-blue-400 text-2xl p-1 uppercase">
       <a href="#">Blog</a>
     </li>
     <li class="hover:text-blue-400 text-2xl p-1 uppercase">

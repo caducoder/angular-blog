@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Article } from 'src/app/model/article';
 
 @Component({
   selector: 'app-big-card',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class BigCardComponent {
 
+  @Input() article: Article = {} as Article
 }

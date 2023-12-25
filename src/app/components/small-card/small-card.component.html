@@ -1,9 +1,11 @@
-<section class="flex flex-row gap-2 justify-center md:flex-row-reverse">
-  <div>
-    <p class="text-xs opacity-50 mb-1">March 27, 2022</p>
-    <p class="text-xl font-semibold">Estudos mostram que ouvir música acalma o cérebro</p>
+<section class="flex flex-row gap-4 justify-end md:flex-row-reverse">
+  <div class="w-3/5">
+    <p class="text-xs opacity-50 mb-1">{{article.publishedAt}}</p>
+    <p class="text-xl font-semibold">
+      {{article.title}}
+    </p>
   </div>
-  <div>
-    <img src="https://fakeimg.pl/300x260/">
+  <div class="w-2/5 md:max-w-52">
+    <img src="{{article.urlToImage}}" class="object-contain">
   </div>
 </section>
