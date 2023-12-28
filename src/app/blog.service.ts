@@ -11,6 +11,6 @@ export class BlogService {
   constructor(private httpClient: HttpClient) { }
 
   getNews() {
-    return this.httpClient.get<NewsApi>(`https://newsapi.org/v2/everything?q=hacking&pageSize=5&apiKey=${environment.apiKey}`)
+    return this.httpClient.get<NewsApi>(`https://gnews.io/api/v4/top-headlines?category=technology&q=hacked&max=5&apikey=${environment.apiKey}`)
   }
 }
